@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>fishcard generator</title>
+  </head>
+  <body>
+    <p>fishcard generator</p>
+    
+    <div class="text" >
+    <p>give Polish sentences separated by a dot</p>
+    <textarea id="niemiecki" name="niemiecki"
+          rows="40" cols="80">
+
+    </textarea>
+    </div>
+    <div class="text" >
+     <p>give German sentences separated by a dot</p>
+    <textarea id="polski" name="polski"
+          rows="40" cols="80">
+
+    </textarea>
+    </div>
+    <button id="podziel">start</button>
+    <div class="text" >
+    <p>Text paste into e.g. Openoffice to prepare printed flashcards</p>
+    <textarea id="wynik" name="wynik"
+          rows="60" cols="80">
+
+    </textarea>
+    </div>
+    
+  </body>
+  <script>
+ 
+    const element = document.getElementById("podziel");
+    element.addEventListener("click", myFunction);
+
+    function myFunction() {
+        var niem = document.getElementById("niemiecki").value;        
+        var pol = document.getElementById("polski").value;
+        var niemArr = niem.split('.');
+        var polArr = pol.split('.');
+        
+        var zrobione = '';
+        var i = 0;
+        for (i in niemArr) {
+            if (niemArr[i] !== "") // ostatni string w niemArr jest pusty
+            {
+                zrobione += niemArr[i] +".\n" + polArr[i] + ".\n";
+            }          
+        }
+        document.getElementById("wynik").value = zrobione;
+        console.log(niemArr);
+       
+    }
+  
+  
+</script>
+</html>
