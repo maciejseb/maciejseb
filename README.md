@@ -1,4 +1,4 @@
-# simple javascripts
+# slowka.html
 Scripts with words to learn
 # toLearnigtool.py
 prepare sentence to learning tools
