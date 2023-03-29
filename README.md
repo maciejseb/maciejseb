@@ -4,4 +4,5 @@ Scripts with words to learn
 prepare sentence to learning tools
 # toPrint.html
 linking sentences in fishcards, the file creates a German sentence first, then a translation. I paste it into Openoffice, print it, cut it out and I have fishcards
-
+# createFile.py
+this script makes file like toLearn.html 
