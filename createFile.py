@@ -33,16 +33,16 @@ worlds[7] =["jdn auf einen Gedanken bringen",
 '''    
   
 
-words = '';
-words += 'worlds = [];\n'
+worlds = '';
+worlds += 'worlds = [];\n'
 
 for  index in range(len(polish_lines)-1):    
-    words += 'words['+str(index) +'] = ["'+english_lines[index].replace('\n',' ') +'.","'+\
+    worlds += 'worlds['+str(index) +'] = ["'+english_lines[index].replace('\n',' ') +'.","'+\
     polish_lines[index].replace('\n',' ') +'."];\n'
     
 output_filename = "words.txt"
 with open(output_filename, 'a') as file_object:
-    file_object.write(words)
+    file_object.write(worlds)
     
 filename = 'wzor.html'
 with open(filename) as file_object:
@@ -54,6 +54,15 @@ print('\n')
 print('drugi \n')
 print(wzor[1])
 print('\n')
+
+output_filename = "toLearn.html"
+with open(output_filename, 'a') as file_object:
+    file_object.write(wzor[0]+'\n')
+    file_object.write('<script> \n')
+    file_object.write(worlds+'\n')
+    file_object.write(wzor[1]+'\n')
+
+
 
 
    
