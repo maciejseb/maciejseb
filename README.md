@@ -7,5 +7,5 @@ linking sentences in fishcards, the file creates a German sentence first, then a
 # createFile.py
 this script makes file like toLearn.html 
 # prepareFlashCards
-script PH running only locally. Create files with words to repeat. Output of this script in catalog prepareFlashCards/site
+script PHP running only locally. Create files with words to repeat. Output of this script in catalog prepareFlashCards/site
 
