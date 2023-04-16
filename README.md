@@ -8,4 +8,5 @@ linking sentences in fishcards, the file creates a German sentence first, then a
 this script makes file like toLearn.html 
 # prepareFlashCards
 script PHP running only locally. Create files with words to repeat. Output of this script in catalog prepareFlashCards/site
-
+#createFlashCards
+From the files in the input directory, creates a page of words to repeat
