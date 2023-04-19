@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<a href = 'https://maciejseb.pl'>strona główna</a>
+<a href = 'http://localhost/learn/index.php'>strona główna</a>
 <h1>powtórka słówek</h1>
 <h1>source - pons.pl, dw.com</h1>
 
