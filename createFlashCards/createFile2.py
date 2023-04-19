@@ -113,10 +113,10 @@ with open(filename) as file_object:
 
 res_output = os.listdir(output_directory)
 
-# make links like <a href = 'https://maciejseb.pl/die-fima2.php'>die fima2</a><br>
+# make links like <a href = 'https://localhost/die-fima2.php'>die fima2</a><br>
 krok=0
 links = ''
-domain = 'https://maciejseb.pl/'
+domain = 'http://localhost/learn/'
 while krok < len(res_output):
     file_link ='<a href = \'' + domain + res_output[krok] + '\'>' + res_output[krok] + '</a><br>\n'
     links = links + file_link;   
